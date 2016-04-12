@@ -1,0 +1,378 @@
+lenovo-ideapad-y510p
+    descrição: Computer
+    largura: 64 bits
+    capacidades: smbios-2.7 vsyscall32
+  *-core
+       descrição: Motherboard
+       ID físico: 0
+     *-memory
+          descrição: Memória do sistema
+          ID físico: 0
+          tamanho: 5918MiB
+     *-cpu
+          produto: Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz
+          fabricante: Intel Corp.
+          ID físico: 1
+          informações do barramento: cpu@0
+          tamanho: 3085MHz
+          capacidade: 3100MHz
+          largura: 64 bits
+          capacidades: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp x86-64 constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt cpufreq
+     *-pci
+          descrição: Host bridge
+          produto: Xeon E3-1200 v3/4th Gen Core Processor DRAM Controller
+          fabricante: Intel Corporation
+          ID físico: 100
+          informações do barramento: pci@0000:00:00.0
+          versão: 06
+          largura: 32 bits
+          clock: 33MHz
+        *-pci:0
+             descrição: PCI bridge
+             produto: Xeon E3-1200 v3/4th Gen Core Processor PCI Express x16 Controller
+             fabricante: Intel Corporation
+             ID físico: 1
+             informações do barramento: pci@0000:00:01.0
+             versão: 06
+             largura: 32 bits
+             clock: 33MHz
+             capacidades: pci pm msi pciexpress normal_decode bus_master cap_list
+             configuração: driver=pcieport
+             recursos: irq:24 porta de E/S:5000(tamanho=4096) memória:d3000000-d4ffffff porta de E/S:a0000000(tamanho=536870912)
+           *-display
+                descrição: VGA compatible controller
+                produto: GK107M [GeForce GT 750M]
+                fabricante: NVIDIA Corporation
+                ID físico: 0
+                informações do barramento: pci@0000:01:00.0
+                versão: a1
+                largura: 64 bits
+                clock: 33MHz
+                capacidades: pm msi pciexpress vga_controller bus_master cap_list rom
+                configuração: driver=nvidia latency=0
+                recursos: irq:34 memória:d3000000-d3ffffff memória:a0000000-afffffff memória:b0000000-b1ffffff porta de E/S:5000(tamanho=128) memória:d4080000-d40fffff
+           *-multimedia
+                descrição: Audio device
+                produto: GK107 HDMI Audio Controller
+                fabricante: NVIDIA Corporation
+                ID físico: 0.1
+                informações do barramento: pci@0000:01:00.1
+                versão: a1
+                largura: 32 bits
+                clock: 33MHz
+                capacidades: pm msi pciexpress bus_master cap_list
+                configuração: driver=snd_hda_intel latency=0
+                recursos: irq:17 memória:d4000000-d4003fff
+        *-pci:1
+             descrição: PCI bridge
+             produto: Xeon E3-1200 v3/4th Gen Core Processor PCI Express x8 Controller
+             fabricante: Intel Corporation
+             ID físico: 1.1
+             informações do barramento: pci@0000:00:01.1
+             versão: 06
+             largura: 32 bits
+             clock: 33MHz
+             capacidades: pci pm msi pciexpress normal_decode bus_master cap_list
+             configuração: driver=pcieport
+             recursos: irq:25 porta de E/S:4000(tamanho=4096) memória:d2000000-d2ffffff porta de E/S:c0000000(tamanho=301989888)
+           *-display
+                descrição: 3D controller
+                produto: GK107M [GeForce GT 750M]
+                fabricante: NVIDIA Corporation
+                ID físico: 0
+                informações do barramento: pci@0000:07:00.0
+                versão: a1
+                largura: 64 bits
+                clock: 33MHz
+                capacidades: pm msi pciexpress bus_master cap_list
+                configuração: driver=nvidia latency=0
+                recursos: irq:35 memória:d2000000-d2ffffff memória:c0000000-cfffffff memória:d0000000-d1ffffff porta de E/S:4000(tamanho=128)
+        *-usb:0
+             descrição: USB controller
+             produto: 8 Series/C220 Series Chipset Family USB xHCI
+             fabricante: Intel Corporation
+             ID físico: 14
+             informações do barramento: pci@0000:00:14.0
+             versão: 05
+             largura: 64 bits
+             clock: 33MHz
+             capacidades: pm msi xhci bus_master cap_list
+             configuração: driver=xhci_hcd latency=0
+             recursos: irq:28 memória:d5200000-d520ffff
+           *-usbhost:0
+                produto: xHCI Host Controller
+                fabricante: Linux 4.2.0-23-generic xhci-hcd
+                ID físico: 0
+                informações do barramento: usb@2
+                nome lógico: usb2
+                versão: 4.02
+                capacidades: usb-3.00
+                configuração: driver=hub slots=4 speed=5000Mbit/s
+           *-usbhost:1
+                produto: xHCI Host Controller
+                fabricante: Linux 4.2.0-23-generic xhci-hcd
+                ID físico: 1
+                informações do barramento: usb@1
+                nome lógico: usb1
+                versão: 4.02
+                capacidades: usb-2.00
+                configuração: driver=hub slots=14 speed=480Mbit/s
+              *-usb:0
+                   descrição: Vídeo
+                   produto: Lenovo EasyCamera
+                   fabricante: Generic
+                   ID físico: 1
+                   informações do barramento: usb@1:1
+                   versão: 8.27
+                   serial: 200901010001
+                   capacidades: usb-2.00
+                   configuração: driver=uvcvideo maxpower=500mA speed=480Mbit/s
+              *-usb:1
+                   descrição: Mouse
+                   produto: USB OPTICAL MOUSE
+                   fabricante: PIXART
+                   ID físico: 2
+                   informações do barramento: usb@1:2
+                   versão: 1.00
+                   capacidades: usb-1.10
+                   configuração: driver=usbhid maxpower=100mA speed=1Mbit/s
+              *-usb:2
+                   descrição: Interface sem fio bluetooth
+                   fabricante: Intel Corp.
+                   ID físico: 7
+                   informações do barramento: usb@1:7
+                   versão: 78.69
+                   capacidades: bluetooth usb-2.00
+                   configuração: driver=btusb speed=12Mbit/s
+        *-communication
+             descrição: Communication controller
+             produto: 8 Series/C220 Series Chipset Family MEI Controller #1
+             fabricante: Intel Corporation
+             ID físico: 16
+             informações do barramento: pci@0000:00:16.0
+             versão: 04
+             largura: 64 bits
+             clock: 33MHz
+             capacidades: pm msi bus_master cap_list
+             configuração: driver=mei_me latency=0
+             recursos: irq:30 memória:d5214000-d521400f
+        *-usb:1
+             descrição: USB controller
+             produto: 8 Series/C220 Series Chipset Family USB EHCI #2
+             fabricante: Intel Corporation
+             ID físico: 1a
+             informações do barramento: pci@0000:00:1a.0
+             versão: 05
+             largura: 32 bits
+             clock: 33MHz
+             capacidades: pm debug ehci bus_master cap_list
+             configuração: driver=ehci-pci latency=0
+             recursos: irq:16 memória:d5219000-d52193ff
+           *-usbhost
+                produto: EHCI Host Controller
+                fabricante: Linux 4.2.0-23-generic ehci_hcd
+                ID físico: 1
+                informações do barramento: usb@3
+                nome lógico: usb3
+                versão: 4.02
+                capacidades: usb-2.00
+                configuração: driver=hub slots=2 speed=480Mbit/s
+              *-usb
+                   descrição: hub USB
+                   fabricante: Intel Corp.
+                   ID físico: 1
+                   informações do barramento: usb@3:1
+                   versão: 0.05
+                   capacidades: usb-2.00
+                   configuração: driver=hub slots=6 speed=480Mbit/s
+        *-multimedia
+             descrição: Audio device
+             produto: 8 Series/C220 Series Chipset High Definition Audio Controller
+             fabricante: Intel Corporation
+             ID físico: 1b
+             informações do barramento: pci@0000:00:1b.0
+             versão: 05
+             largura: 64 bits
+             clock: 33MHz
+             capacidades: pm msi pciexpress bus_master cap_list
+             configuração: driver=snd_hda_intel latency=0
+             recursos: irq:31 memória:d5210000-d5213fff
+        *-pci:2
+             descrição: PCI bridge
+             produto: 8 Series/C220 Series Chipset Family PCI Express Root Port #4
+             fabricante: Intel Corporation
+             ID físico: 1c
+             informações do barramento: pci@0000:00:1c.0
+             versão: d5
+             largura: 32 bits
+             clock: 33MHz
+             capacidades: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuração: driver=pcieport
+             recursos: irq:26 porta de E/S:3000(tamanho=4096) memória:d5100000-d51fffff
+           *-network
+                descrição: Ethernet interface
+                produto: QCA8171 Gigabit Ethernet
+                fabricante: Qualcomm Atheros
+                ID físico: 0
+                informações do barramento: pci@0000:08:00.0
+                nome lógico: eth0
+                versão: 10
+                serial: 28:d2:44:31:92:11
+                capacidade: 1Gbit/s
+                largura: 64 bits
+                clock: 33MHz
+                capacidades: pm pciexpress msi msix bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt-fd autonegotiation
+                configuração: autonegotiation=on broadcast=yes driver=alx latency=0 link=no multicast=yes port=twisted pair
+                recursos: irq:33 memória:d5100000-d513ffff porta de E/S:3000(tamanho=128)
+        *-pci:3
+             descrição: PCI bridge
+             produto: 8 Series/C220 Series Chipset Family PCI Express Root Port #5
+             fabricante: Intel Corporation
+             ID físico: 1c.4
+             informações do barramento: pci@0000:00:1c.4
+             versão: d5
+             largura: 32 bits
+             clock: 33MHz
+             capacidades: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuração: driver=pcieport
+             recursos: irq:27 memória:d5000000-d50fffff
+           *-network
+                descrição: Interface sem fio
+                produto: Centrino Wireless-N 2230
+                fabricante: Intel Corporation
+                ID físico: 0
+                informações do barramento: pci@0000:09:00.0
+                nome lógico: wlan0
+                versão: c4
+                serial: 00:c2:c6:12:a0:61
+                largura: 64 bits
+                clock: 33MHz
+                capacidades: pm msi pciexpress bus_master cap_list ethernet physical wireless
+                configuração: broadcast=yes driver=iwlwifi driverversion=4.2.0-23-generic firmware=18.168.6.1 ip=192.168.0.114 latency=0 link=yes multicast=yes wireless=IEEE 802.11bgn
+                recursos: irq:32 memória:d5000000-d5001fff
+        *-usb:2
+             descrição: USB controller
+             produto: 8 Series/C220 Series Chipset Family USB EHCI #1
+             fabricante: Intel Corporation
+             ID físico: 1d
+             informações do barramento: pci@0000:00:1d.0
+             versão: 05
+             largura: 32 bits
+             clock: 33MHz
+             capacidades: pm debug ehci bus_master cap_list
+             configuração: driver=ehci-pci latency=0
+             recursos: irq:23 memória:d5218000-d52183ff
+           *-usbhost
+                produto: EHCI Host Controller
+                fabricante: Linux 4.2.0-23-generic ehci_hcd
+                ID físico: 1
+                informações do barramento: usb@4
+                nome lógico: usb4
+                versão: 4.02
+                capacidades: usb-2.00
+                configuração: driver=hub slots=2 speed=480Mbit/s
+              *-usb
+                   descrição: hub USB
+                   fabricante: Intel Corp.
+                   ID físico: 1
+                   informações do barramento: usb@4:1
+                   versão: 0.05
+                   capacidades: usb-2.00
+                   configuração: driver=hub slots=8 speed=480Mbit/s
+        *-isa
+             descrição: ISA bridge
+             produto: HM86 Express LPC Controller
+             fabricante: Intel Corporation
+             ID físico: 1f
+             informações do barramento: pci@0000:00:1f.0
+             versão: 05
+             largura: 32 bits
+             clock: 33MHz
+             capacidades: isa bus_master cap_list
+             configuração: driver=lpc_ich latency=0
+             recursos: irq:0
+        *-storage
+             descrição: SATA controller
+             produto: 8 Series/C220 Series Chipset Family 6-port SATA Controller 1 [AHCI mode]
+             fabricante: Intel Corporation
+             ID físico: 1f.2
+             informações do barramento: pci@0000:00:1f.2
+             versão: 05
+             largura: 32 bits
+             clock: 66MHz
+             capacidades: storage msi pm ahci_1.0 bus_master cap_list
+             configuração: driver=ahci latency=0
+             recursos: irq:29 porta de E/S:6048(tamanho=8) porta de E/S:6054(tamanho=4) porta de E/S:6040(tamanho=8) porta de E/S:6050(tamanho=4) porta de E/S:6020(tamanho=32) memória:d5217000-d52177ff
+        *-serial DISPONÍVEL
+             descrição: SMBus
+             produto: 8 Series/C220 Series Chipset Family SMBus Controller
+             fabricante: Intel Corporation
+             ID físico: 1f.3
+             informações do barramento: pci@0000:00:1f.3
+             versão: 05
+             largura: 64 bits
+             clock: 33MHz
+             configuração: latency=0
+             recursos: memória:d5215000-d52150ff porta de E/S:6000(tamanho=32)
+     *-scsi
+          ID físico: 2
+          nome lógico: scsi5
+          capacidades: emulated
+        *-disk
+             descrição: ATA Disk
+             produto: ST1000LM014-SSHD
+             fabricante: Seagate
+             ID físico: 0.0.0
+             informações do barramento: scsi@5:0.0.0
+             nome lógico: /dev/sda
+             versão: LVD3
+             serial: W380X7KF
+             tamanho: 931GiB (1TB)
+             capacidades: partitioned partitioned:dos
+             configuração: ansiversion=5 logicalsectorsize=512 sectorsize=4096 signature=39b32b39
+           *-volume:0
+                descrição: Windows NTFS volume
+                ID físico: 1
+                informações do barramento: scsi@5:0.0.0,1
+                nome lógico: /dev/sda1
+                versão: 3.1
+                serial: e2c429f6-5493-8748-9542-5685f8aa9c3f
+                tamanho: 98MiB
+                capacidade: 100MiB
+                capacidades: primary bootable ntfs initialized
+                configuração: clustersize=4096 created=2014-08-27 21:29:31 filesystem=ntfs label=System Reserved state=clean
+           *-volume:1
+                descrição: Windows NTFS volume
+                ID físico: 2
+                informações do barramento: scsi@5:0.0.0,2
+                nome lógico: /dev/sda2
+                versão: 3.1
+                serial: 666dd745-e0f2-e24c-a276-e7bda326800c
+                tamanho: 195GiB
+                capacidade: 195GiB
+                capacidades: primary ntfs initialized
+                configuração: clustersize=4096 created=2014-08-27 21:29:59 filesystem=ntfs state=clean
+           *-volume:2
+                descrição: Windows NTFS volume
+                ID físico: 3
+                informações do barramento: scsi@5:0.0.0,3
+                nome lógico: /dev/sda3
+                versão: 3.1
+                serial: 80f1bc2b-7548-8b49-8f78-f79f4d641977
+                tamanho: 465GiB
+                capacidade: 465GiB
+                capacidades: primary ntfs initialized
+                configuração: clustersize=4096 created=2014-08-27 17:04:09 filesystem=ntfs label=Data state=clean
+           *-volume:3
+                descrição: volume EXT4
+                fabricante: Linux
+                ID físico: 4
+                informações do barramento: scsi@5:0.0.0,4
+                nome lógico: /dev/sda4
+                nome lógico: /
+                versão: 1.0
+                serial: 7884b389-7828-44b2-b5c0-0069a3e8c6b0
+                tamanho: 270GiB
+                capacidade: 270GiB
+                capacidades: primary journaled extended_attributes large_files huge_files dir_nlink recover extents ext4 ext2 initialized
+                configuração: created=2015-08-17 16:17:48 filesystem=ext4 lastmountpoint=/ modified=2016-04-12 15:32:26 mount.fstype=ext4 mount.options=rw,relatime,errors=remount-ro,data=ordered mounted=2016-04-12 15:32:32 state=mounted
